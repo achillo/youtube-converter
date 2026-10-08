@@ -1,0 +1,22 @@
+services:
+  backend:
+    build:
+      context: ./backend
+    container_name: youtube-backend
+    ports:
+      - "3001:3001"
+    environment:
+      PYTHONUNBUFFERED: "1"
+    restart: unless-stopped
+
+  app:
+    build:
+      context: ./app
+    container_name: youtube-app
+    depends_on:
+      - backend
+    ports:
+      - "5173:5173"
+    environment:
+      VITE_API_URL: http://backend:3001
+    restart: unless-stopped
