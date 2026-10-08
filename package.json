@@ -1,0 +1,22 @@
+{
+  "name": "youtube-converter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "mp3": "node youtube-to-mp3.js",
+    "mp4": "node youtube-to-mp4.js",
+    "python-mp3": "C:/Python312/python.exe backend/youtube_to_mp3.py",
+    "python-mp4": "C:/Python312/python.exe backend/youtube_to_mp4.py",
+    "api": "C:/Python312/python.exe backend/python_api.py",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ffmpeg-static": "^5.2.0",
+    "ffprobe-static": "^3.1.0",
+    "youtube-dl-exec": "^3.1.17"
+  }
+}

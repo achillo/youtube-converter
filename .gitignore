@@ -1,0 +1,48 @@
+# Node
+node_modules/
+**/node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Build outputs
+app/dist/
+app/.vite/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.venv/
+backend/.venv/
+vendor/
+
+# Environment files
+.env
+.env.*
+
+# Keep only app and backend tracked
+# Everything else in the repo root is ignored by default unless explicitly added.
+# If you need to force-track a root file, use: git add -f path/to/file
+
+# Common generated artifacts
+current_download/
+downloads/
+downloads_old_song/
+albums/
+*.js
+!app/**/*.js
+!backend/**/*.py
+!backend/**/*.txt
+!backend/Dockerfile
+!backend/.dockerignore
+!backend/requirements.txt
